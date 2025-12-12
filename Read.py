@@ -53,3 +53,9 @@ df["Nombre de G"] = df["Séquence"].str.count("G")
 
 print("===== Nombre de G ajoutés =====")
 print(df, "\n" "\n")
+
+#7) Calculer l'écart type du Pourcentage GC et de la Longueur des Séquence
+print("*******Calcul de l'écart type*******")
+écart_type_GC = df["Pourcentage GC"].std()
+print(f"écart type du Pourcentagede GC : {écart_type_GC:.3f}%")
+print( "\n" "\n")
