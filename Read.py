@@ -28,3 +28,9 @@ print("************** Operations ***************")
 #2) Sélectionner la colonne "Longueur"
 Longueur = df["Longueur"]
 print(Longueur, "\n" "\n")
+
+#3)Filtrer les séquences avec Longueur supérieur à 10
+print("************* Filtrage avec la Longueur *************")
+# Filtrer les séquences avec Longueur supérieur à 10
+filtered_df = df[df["Longueur"] > 10]
+print(filtered_df, "\n" "\n")
