@@ -47,3 +47,9 @@ print("************* Ajout d'une nouvelle colonne *************")
 # Ajouter une nouvelle colonne "catégorisée Pourcentage GC"
 df["Catégorie Pourcentage GC"] = df["Pourcentage GC"].apply(lambda x:"Riche" if x > 55 else ("Moyen" if 45<=x<=55 else "faible"))
 print( "\n" "\n")
+
+#6) Ajouter une colonne comptant les 'G'
+df["Nombre de G"] = df["Séquence"].str.count("G")
+
+print("===== Nombre de G ajoutés =====")
+print(df, "\n" "\n")
